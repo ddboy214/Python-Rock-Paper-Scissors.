@@ -3,11 +3,15 @@
 # Get Player's choice
 player_choice = input("Choose one(rock, paper, scissors): ").upper()
 
-# import random
-import random
+# Create list of choices 
+choices = ["rock", "papesr", "scissors"]
 
-# To get computer choice, we must create a list of choices for the computer to choose from.
-choices = ["rock", "paper", "scissors"]
+# Verify player choice
+if player_choice not in choices:
+    print("Invalid choice. Please pick a valid choice(rock, paper, scissors): ")
+
+# Import Random module.
+import random
 
 # Get computer's choice
 computer_choice = random.choice(choices)
@@ -19,9 +23,10 @@ if (
     (player_choice == "scissors" and computer_choice == "rock")
     
 ): 
-    print("You Win!")
-else:
-    print("You Lose!")
+    print(f'You win. The computer choose {computer_choice}')
+elif player_choice == computer_choice:
+    print(f'Draw. The computer chose {computer_choice}')
+
 
 
     
