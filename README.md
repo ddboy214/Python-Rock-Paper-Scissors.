@@ -1,1 +1,1 @@
-Enter a choice when prompted to.
+Paste into a python code editor to play. 
