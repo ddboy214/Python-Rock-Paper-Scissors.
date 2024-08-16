@@ -4,7 +4,7 @@
 player_choice = input("Choose one(rock, paper, scissors): ").upper()
 
 # Create list of choices 
-choices = ["rock", "papesr", "scissors"]
+choices = ["rock", "paper", "scissors"]
 
 # Verify player choice
 if player_choice not in choices:
